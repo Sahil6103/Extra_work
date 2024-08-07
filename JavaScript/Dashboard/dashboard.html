@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Home</title>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .sidebar-hidden .left {
+            display: none;
+        }
+
+        .sidebar-hidden .right {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="dashboard flex items-start">
+        <div class="left w-[18%] bg-sky-800 h-[100vh] px-5 py-2 flex flex-col space-y-10" id="sidebar">
+            <span class="logo text-white text-[2rem] font-semibold">Logo</span>
+            <div class="links text-white flex flex-col space-y-10 text-[1.25rem] font-semibold">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Service</a>
+                <a href="#">Todo</a>
+            </div>
+            <div class="logout flex">
+                <a href="#" class="text-white flex space-y-10 text-[1.25rem] font-semibold">Logout</a>
+            </div>
+        </div>
+        <div class="right w-[82%]">
+            <div class="nav shadow py-2 px-5 flex justify-between items-center">
+                <span class="toggle bg-sky-800 p-1 cursor-pointer" id="toggleButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 24 24" width="32" height="32"
+                        color="#fff" fill="none">
+                        <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+                <div class="user-icon bg-sky-800 rounded-full p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" color="#fff"
+                        fill="none">
+                        <path
+                            d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="cards my-10 mx-10 flex justify-start space-x-20">
+                <div class="card-1 px-8 py-6 bg-sky-500 w-fill h-fill flex space-x-8 rounded rounded-[8px]">
+                    <div class="detail">
+                        <span class="text-[1rem] font-bold text-white">Total Order</span>
+                        <h2 class="text-[2.5rem] text-white">45</h2>
+                    </div>
+                    <div class="img">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="70" height="70" color="#fff"
+                            fill="none">
+                            <path
+                                d="M12 22C11.1818 22 10.4002 21.6698 8.83693 21.0095C4.94564 19.3657 3 18.5438 3 17.1613C3 16.7742 3 10.0645 3 7M12 22C12.8182 22 13.5998 21.6698 15.1631 21.0095C19.0544 19.3657 21 18.5438 21 17.1613V7M12 22L12 11.3548"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M8.32592 9.69138L5.40472 8.27785C3.80157 7.5021 3 7.11423 3 6.5C3 5.88577 3.80157 5.4979 5.40472 4.72215L8.32592 3.30862C10.1288 2.43621 11.0303 2 12 2C12.9697 2 13.8712 2.4362 15.6741 3.30862L18.5953 4.72215C20.1984 5.4979 21 5.88577 21 6.5C21 7.11423 20.1984 7.5021 18.5953 8.27785L15.6741 9.69138C13.8712 10.5638 12.9697 11 12 11C11.0303 11 10.1288 10.5638 8.32592 9.69138Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 12L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M17 4L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-1 px-8 py-6 bg-sky-500 w-fill h-fill flex space-x-8 rounded rounded-[8px]">
+                    <div class="detail">
+                        <span class="text-[1rem] font-bold text-white">Total Order</span>
+                        <h2 class="text-[2.5rem] text-white">45</h2>
+                    </div>
+                    <div class="img">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="70" height="70" color="#fff"
+                            fill="none">
+                            <path
+                                d="M12 22C11.1818 22 10.4002 21.6698 8.83693 21.0095C4.94564 19.3657 3 18.5438 3 17.1613C3 16.7742 3 10.0645 3 7M12 22C12.8182 22 13.5998 21.6698 15.1631 21.0095C19.0544 19.3657 21 18.5438 21 17.1613V7M12 22L12 11.3548"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M8.32592 9.69138L5.40472 8.27785C3.80157 7.5021 3 7.11423 3 6.5C3 5.88577 3.80157 5.4979 5.40472 4.72215L8.32592 3.30862C10.1288 2.43621 11.0303 2 12 2C12.9697 2 13.8712 2.4362 15.6741 3.30862L18.5953 4.72215C20.1984 5.4979 21 5.88577 21 6.5C21 7.11423 20.1984 7.5021 18.5953 8.27785L15.6741 9.69138C13.8712 10.5638 12.9697 11 12 11C11.0303 11 10.1288 10.5638 8.32592 9.69138Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 12L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M17 4L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img px-6">
+                <img src="https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2012/06/Excel-charts-11.png"
+                    alt="">
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.user-form {
+  background-color: #dedede;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.user-form .card {
+  width: 30%;
+  background-color: rgba(240, 240, 240, 0.685);
+  backdrop-filter: blur(2px);
+  padding: 25px;
+  border: none;
+  border-radius: 8px;
+}
+
+.user-form .card h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.user-form .card input {
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+
+.user-form .card input:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.user-form .card .btn {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.753);
+  border-radius: 5px;
+  color: white;
+}
+
+.user-form .card a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.753);
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
+
+.sidebar-hidden .left {
+  display: none;
+}
+
+.sidebar-hidden .right {
+  width: 100%;
+}

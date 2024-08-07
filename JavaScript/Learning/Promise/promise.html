@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+    <script>
+        // Promise 1 : store promise in a variable : 
+
+        let promise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("Promise Executed.");
+                resolve()
+            }, 1000);
+        })
+
+        promise.then(() => {
+            console.log("Promise Completed");
+        }).catch(() => {
+            console.log("Promise");
+        })
+
+        // Here, in this code we have a promise which is stored in a variable.
+        // now when the code will be run successfully it returns Promise Executed. as above in settimeout function.
+        // .then() works when promise state becomes resolve.
+        // if we don't put resolve or reject in our promise then .then() or .catch() method will not be executed.
+
+        // Promise 2 : create Promise without storing it into variable.
+        new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("Promise Executed.");
+                resolve("congratulations..")
+            }, 1000);
+        }).then((message) => {
+            console.log(message);
+        })
+
+        // we can also pass messages from the resolve() function this message will be stored in perameter of .then() method.
+
+        // Promise 3 : Provide array or object or whatever we want in resolve or reject: 
+
+        new Promise((res, rej) => {
+            setTimeout(() => {
+                res({ username: "abc", age: 10 })
+            }, 1000);
+        }).then((user) => {
+            console.log(user);
+        })
+    </script>
+</body>
+
+</html>
