@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERIA - Our Gallery</title>
+    <link rel="stylesheet" href="src/CSS/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header and hero -->
+    <section class="header_hero h-[50vh]">
+        <nav>
+            <div class="flex flex-wrap items-center justify-between py-4 md:py-6 px-3 md:px-10">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="src/IMG/logo6.webp" class="h-6" alt="Logo" />
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#CBC8C1] rounded-lg md:hidden focus:outline-none"
+                    aria-controls="navbar-default" aria-expanded="false">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" color="#cac6c0"
+                        fill="none">
+                        <path d="M20 12L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M20 5L4 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M20 19L4 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+                <div class="navbar hidden w-full md:block md:w-auto transition-all duration-300 bg-black md:bg-transparent"
+                    id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                        <li>
+                            <a href="index.html"
+                                class="text-[0.9rem] tracking-widest block py-2 px-3 text-[#CBC8C1] rounded"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="text-[0.9rem] tracking-widest block py-2 px-3 text-[#CBC8C1] rounded">About
+                                Us</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-[0.9rem] tracking-widest block py-2 px-3 text-[#CBC8C1] rounded ">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="text-[0.9rem] tracking-widest block py-2 px-3 text-[#CBC8C1] rounded">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero flex flex-col justify-center items-center h-[70%]">
+            <div class="heading text-[#CBC8C1] font-black tracking-widest text-[3.2rem]">
+                <h1>Our Portfolio</h1>
+            </div>
+
+
+            <nav class="flex mt-2" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                    <li class="inline-flex items-center">
+                        <a href="index.html"
+                            class="inline-flex items-center text-sm font-bold text-[#cbc8c197] hover:text-white transition-all duration-150">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="rtl:rotate-180 text-[#cbc8c197] w-3 h-3 mx-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <a href="#"
+                                class="ms-1 text-sm font-bold text-[#cbc8c197] hover:text-white transition-all duration-150">Portfolio</a>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+    </section>
+    <!-- end of header and hero -->
+
+    <!-- portfolio section -->
+    <section class="portfolio py-16 md:py-20 px-5 md:px-10 bg-[#CBC8C1]">
+        <div class="heading flex flex-col justify-center items-center text-center">
+            <h1 class="text-[1.8rem] md:text-[2.2rem] md:w-[60%] lg:w-[70%] tracking-wide text-[#5E452A]">Our Best Work
+            </h1>
+            <p class="text-[1rem] md:text-[1.1rem] mt-5 md:w-[70%] lg:w-[75%]">Welcome to INTERIA Portfolio, where we
+                transform spaces into personalized sanctuaries. Explore our projects that blend creativity with
+                functionality, showcasing our commitment to quality and innovative design solutions. Let our work
+                inspire your next design journey.</p>
+        </div>
+
+        <div class="portfolio flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-10 mt-14">
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-1.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Sanate</span>
+                </div>
+            </div>
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-2.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Merto Deco</span>
+                </div>
+            </div>
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-3.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Opus</span>
+                </div>
+            </div>
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-4.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Wast Village</span>
+                </div>
+            </div>
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-5.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Regency</span>
+                </div>
+            </div>
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-6.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Aquatic</span>
+                </div>
+            </div>
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-7.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Magestic</span>
+                </div>
+            </div>
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-8.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Dream</span>
+                </div>
+            </div>
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-9.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Edwardian</span>
+                </div>
+            </div>
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-10.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Marvance</span>
+                </div>
+            </div>
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-11.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Ornamental</span>
+                </div>
+            </div>
+            <div class="card flex flex-col gap-2 ">
+                <img src="src/IMG/portfolio/portfolio-12.webp" alt="" class="object-cover w-full h-full">
+                <div class="card-body">
+                    <span class="text-[1.1rem]">Acrolite</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end portfolio section -->
+
+
+    <!-- footer section -->
+    <footer class="px-3 py-16 md:px-10 bg-[#12100E] text-[#CBC8C1]">
+        <div class="heading text-center flex flex-col justify-center items-center gap-3">
+            <h1 class="text-[1.8rem] md:text-[2.2rem] text-[#5E452A]">STAY IN TOUCH...</h1>
+            <p class="text-[1rem] lg:w-[70%]">We hope you have found our website inspiring, and we would love to stayin
+                contact. To receive the latest news about our products, services, events and promotions,
+                simplyprovideyour details and we’ll do the rest.</p>
+        </div>
+        <div class="main-design md:grid grid-cols-12 mt-10 space-y-10">
+            <div class="links flex flex-col justify-center items-center gap-3 mt-5 md:col-span-3">
+                <a href="about.html" class="text-[1.1rem] tracking-wider">About Us</a>
+                <a href="#" class="text-[1.1rem] tracking-wider">Portfolio</a>
+                <a href="contact.html" class="text-[1.1rem] tracking-wider">Contact Us</a>
+            </div>
+            <div class="subscribe flex flex-col justify-start my-5 md:col-span-6">
+                <h1 class="text-center text-[1.4rem]">Subscribe to Our Newsletter</h1>
+                <div class="control flex flex-col lg:flex-row justify-center items-center mt-4">
+                    <input type="text" placeholder="Email Address"
+                        class="p-3 px-5 w-[70%] bg-[#CBC8C1] placeholder:text-[#12100e84]">
+                    <button
+                        class="px-10 py-[0.8rem] mt-3 lg:mt-0 lg:ml-2 bg-[#5E452A] text-center font-semibold tracking-wider">Subscribe</button>
+                </div>
+            </div>
+            <div class="social flex justify-center items-center gap-5 md:gap-3 lg:gap-5 mt-8 md:col-span-3">
+                <div class="facebook bg-[#5E452A] w-8 h-8 flex justify-center items-center rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#CBC8C1"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="instagram bg-[#5E452A] w-8 h-8 flex justify-center items-center rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#CBC8C1"
+                        fill="none">
+                        <path
+                            d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        <path
+                            d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                        <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="twitter bg-[#5E452A] w-8 h-8 flex justify-center items-center rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#CBC8C1"
+                        fill="none">
+                        <path
+                            d="M3 21L10.5484 13.4516M21 3L13.4516 10.5484M13.4516 10.5484L8 3H3L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="pintrest bg-[#5E452A] w-8 h-8 flex justify-center items-center rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#cbc8c1"
+                        fill="none">
+                        <path d="M12 11L8 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M9.97368 16.5724C10.5931 16.8473 11.2787 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 12.9108 7.24367 13.7646 7.66921 14.5"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>

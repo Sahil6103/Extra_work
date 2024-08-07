@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  background-image: url("img/Highlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682_VP5-1920x600.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 65vh;
+  width: 100%; */
+}
+
+.hero .card {
+  position: absolute;
+}
+
+@media (min-width: 320px) {
+  .hero {
+    background-position-x: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero .card {
+    position: initial;
+  }
+}

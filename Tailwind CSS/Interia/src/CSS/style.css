@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: makota;
+  src: url(../../font/makota/Makota.ttf);
+}
+
+@font-face {
+  font-family: zayda;
+  src: url(../../font/zayda-modern-sans-serif-font/Zayda.otf);
+}
+
+@font-face {
+  font-family: avenir;
+  src: url(../../font/avenir-next/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+  font-family: morgena;
+  src: url(../../font/Morgena-Font/morgenaregular-vnvel.ttf);
+}
+
+:root {
+  --heading3: makota;
+  --heading5: zayda;
+  --heading9: avenir;
+  --heading: morgena;
+}
+
+body {
+  font-family: var(--heading9);
+  /* scroll-behavior: smooth; */
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cbc8c1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5e452a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2e2824;
+}
+
+.header_hero {
+  position: relative;
+  z-index: 1;
+  font-family: var(--heading9);
+}
+
+.header_hero:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../IMG/mob-hero2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+@media (min-width: 524px) {
+  .header_hero:before {
+    background-image: url(../IMG/hero-img5.webp);
+  }
+}
+
+@media (min-width: 768px) {
+  .header_hero .navbar ul li a::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #cbc8c1;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+}
+
+.header_hero .navbar ul li {
+  position: relative;
+}
+
+.header_hero .navbar ul li a {
+  position: relative;
+}
+
+.header_hero .navbar ul li a:hover::after {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.header_hero .hero h1,
+.about_header_hero .hero .heading h1 {
+  font-family: var(--heading);
+  font-weight: 600;
+}
+
+.welcome h1,
+.design .heading h1,
+.whychoose .heading h1,
+.explore .right h1,
+.project .heading h1,
+.statestic .box .box-body h1,
+footer .heading h1,
+footer .subscribe h1,
+.about .heading h1,
+.about .main-design .right .heading1 h1,
+.about .main-design .right .heading2 h1,
+.contact .heading h1,
+.portfolio .heading h1,
+.design .design-link h2,
+.whychoose .card .body h2 {
+  font-family: var(--heading);
+  font-weight: 700;
+}
+
+.explore .left {
+  background-image: url("../IMG/explore.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .explore .left {
+    min-height: 300px;
+  }
+}
