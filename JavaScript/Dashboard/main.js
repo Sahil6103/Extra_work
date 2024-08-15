@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
       } else {
         form.action = "dashboard.html";
+        e.preventDefault();
       }
     });
   }
@@ -61,10 +62,13 @@ document.addEventListener("DOMContentLoaded", function () {
   let mainContainer = document.querySelector("main");
 
   if (toggleButton && mainContainer) {
-    toggleButton.addEventListener("click", function () {
-      mainContainer.classList.toggle("sidebar-hidden");
-    });
+    toggleButton.addEventListener("click", toggle);
+    mainContainer.classList.toggle("sidebar-hidden");
   }
+
+  const toggle = () => {
+    mainContainer.classList.toggle("sidebar-hidden");
+  };
 
   let logout = document.querySelector(".logout");
 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script> -->
+    <script>
+        const public_key = "95c7543a25c5f3875515616e3a064fac";
+        const private_key = "e3792f7147b51f9a93d16d0925ceb19e02206406";
+        let url = fetch("http://gateway.marvel.com/v1/public/comics")
+            .then(response => response.json())
+            .then((data) => {
+                console.log(data);
+            })
+    </script>
+
+</body>
+
+</html>

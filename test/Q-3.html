@@ -1,0 +1,139 @@
+<!-- Define the list types in HTML? explaine with examples of navbar and apply a dropdown in navbar also ? -->
+
+<!-- 
+=> There are two types of list in HTML :
+
+    - unordered list
+    - ordered list
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down List</title>
+
+    <!-- custom CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(206, 202, 202);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+
+        li {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .list {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .links {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-color: black;
+            padding: 10px;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+            width: 100px;
+            padding: 20px 15px;
+        }
+
+        .links a {
+            color: white;
+        }
+
+        .list:hover .links {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navabr -->
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+            <div class="list">Service
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" color="#000000"
+                    fill="none">
+                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="#">Service1</a>
+                        </li>
+                        <li>
+                            <a href="#">Service2</a>
+                        </li>
+                        <li>
+                            <a href="#">Service3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>

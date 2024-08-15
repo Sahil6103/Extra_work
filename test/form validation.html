@@ -1,0 +1,170 @@
+<!-- write a code in javascript to apply validations of following form -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            border: 1px solid;
+            width: 20%;
+            padding: 20px 30px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            gap: 10px;
+        }
+
+        .card form input {
+            width: 100%;
+            padding: 5px 10px;
+            border-radius: 8px;
+            border: 1px solid;
+        }
+
+        .card form #submit {
+            background-color: rgb(231, 111, 131);
+            border: none;
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        #error {
+            color: red;
+            font-weight: 600;
+            display: none;
+        }
+
+        #submit-con {
+            color: green;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Get Started</h1>
+
+        <form action="#">
+            <span id="error"></span><br>
+            <label for="username">User Name</label><br>
+            <input type="text" id="username"><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="text" id=" email"><br><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password"><br><br>
+
+            <input type="submit" value="Submit" id="submit"><br>
+            <span id="submit-con"></span>
+        </form>
+    </div>
+
+    <script>
+        let username = document.querySelector("#username");
+        let email = document.querySelector("#email");
+        let password = document.querySelector("#password");
+        let submit = document.querySelector("#submit")
+        let error = document.querySelector("#error")
+        let form_submit = document.querySelector("#submit-con")
+
+        // click event of registration button
+        submit.addEventListener("click", (e) => {
+            if (
+                checkUserName() == false ||
+                checkEmail() == false ||
+                checkPassword() == false
+            ) {
+                e.preventDefault();
+            } else {
+                form_submit.innerHTML = "Form Submitted."
+                username.value = ""
+                email.value = ""
+                password.value = ""
+            }
+        });
+
+        // function of Error Message
+
+        function errorMessage(msg) {
+            error.innerHTML = msg
+            error.style = "display : initial"
+        }
+
+        // function of validating username
+
+        function checkUserName() {
+            let userNameRegex = /^[a-zA-Z\s-]+$/;
+
+            if (!username) {
+                errorMessage("Enter Username");
+                username.focus();
+                return false;
+            } else {
+                if (!userNameRegex.test(username.value)) {
+                    errorMessage("Enter valid Username");
+                    username.focus();
+                    return false;
+                }
+            }
+        }
+
+        // function of validating email
+
+        function checkEmail() {
+            let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            errorMessage("Enter Email address");
+            if (email.value === "") {
+                email.focus();
+                return false;
+            } else if (!emailRegex.test(email.value)) {
+                errorMessage("Enter valid Email");
+                email.focus();
+                return false;
+            }
+            return true;
+        }
+
+        // function of validating password
+
+        function checkPassword() {
+            let passwordRegex = /^[a-zA-Z0-9]{6,16}$/;
+
+            error.innerHTML = "";
+
+            if (!password.value) {
+                errorMessage("Enter Pasword");
+                password.focus();
+                return false;
+            } else if (!passwordRegex.test(password.value)) {
+                errorMessage("Invalid password format");
+                password.focus();
+                return false;
+            }
+            return true;
+        }
+
+
+    </script>
+</body>
+
+</html>

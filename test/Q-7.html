@@ -1,0 +1,56 @@
+<!-- What are the elements of the CSS Box Model? explain with examples? -->
+
+<!-- 
+=> There are 4 elements in the Box modal of CSS :
+
+- content : content is the text of HTML elements.
+- padding : padding is a space between content and border of elements.
+- border : border is display the edges of elements.
+- margin : margin is the outer space of between two elements.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            /* margin of card */
+            margin: 10px;
+
+            /* padding of card */
+            padding: 10px;
+
+            /* border of card */
+            border: 1px solid;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <!-- content of card -->
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus tempore animi magnam numquam maxime autem
+            laborum sunt suscipit officiis cupiditate.</p>
+    </div>
+</body>
+
+</html>
