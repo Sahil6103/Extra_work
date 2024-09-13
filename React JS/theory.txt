@@ -1,0 +1,67 @@
+# ----------------------------- create react app ----------------------------- #
+
+• create react app :
+=> npx create-react-app [my-app]
+
+• start react app :
+=> npm start
+
+• give the list libraries of react :
+=> npm list react 
+
+=> version of react :
+• npm view react version 
+
+# ------------------------ create react app with vite ------------------------ #
+
+• create react app with vite :
+=> npm create vite@latest
+
+=> give the name of project
+
+=> select the framework
+
+=> select language
+
+• Run the project : 
+=> npm run dev
+
+Notes : 
+=> component always should be save as .jsx
+=> In the vite app index.html file will be placed out side of the public folder.
+
+
+# ------------------------ install animation is React ------------------------ #
+
+• to install animation in react :
+=> npm animate.css --save
+
+# ------------------------------------ Change the port number of Project ------------------------------------ #
+
+=> How to change react js port :
+• go to the package.json and change :
+-> "script" : "set PORT=[any port number] && react-scripts start"
+
+# -------------- Another way of changing port number -------------- #
+
+-> change port by creating .env file :
+• PORT=[port number]
+
+
+How many ways to check versions of react :
+
+=> using cmd
+=> using package.json
+=> by creating a compent
+
+
+• to uninstall react app :
+=> npm -g uninstall create-react-app
+
+# -------------------------------------------------------------------------- #
+
+
+• What is JSX ?
+
+=> JSX stands for Javascript XML.
+=> XML stands for Extansible Markup Language. 

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@font-face {
+  font-family: "aquire";
+  src: url("src/assets/font/aquire-font/AquireBold-8Ma60.otf");
+}
+@font-face {
+  font-family: "airnt";
+  src: url("src/assets/font/airnt/Airnt.otf");
+}
+@font-face {
+  font-family: "brandon";
+  src: url("src/assets/font/brandon-grotesque-font-family-1716364929-0/HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: brandon;
+}
+
+body {
+  background-color: #040404;
+}
+
+header .logo span,
+footer .logo span {
+  font-family: "airnt";
+}
+
+.hero .content h1 {
+  font-family: "airnt";
+}
+
+.about span {
+  font-family: airnt;
+}

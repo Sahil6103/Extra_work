@@ -1,0 +1,73 @@
+# ---------------------------- directory structure --------------------------- #
+
+► node modules =>
+
+• what is node Module?
+
+=> dependany manager of react JS, using node module we can import libraries.
+=> node module is help to install a new libraries, packages, run react js app via npm start.
+
+-> npm : node package manager
+
+-> npx : node package exicutable 
+
+=> to install node module : npm install
+
+# -------------------------------------------- #
+
+► public =>
+=> public folder is shareable file
+
+- index.html
+- favicons
+- logo images
+- robots.txt => it help to create website SEO friendly
+
+# -------------------------------------------- #
+
+► src => 
+=> src is main folder of react app where we can create out components inside of react js.
+
+• components : 
+-> App.js or App.jsx
+
+Notes : 
+->any components will be saved with first letter in uppercase.
+->components function name's first letter should be in upper case / camel case. 
+
+ex :
+- About.js
+- AboutUs.js
+- Aboutus.js
+
+# -------------------------------------------- #
+
+► gitingnore file :
+=> ignore a folder to upload on git repo.
+=> use / before folder name to ingnore the folder 
+=> to create gitignore file: 
+=> create gitignore file with .gitignore
+
+# -------------------------------------------- #
+
+► package.json : 
+=> package.json provides all details of our project.
+
+- app name
+- react version
+- react-dom-version
+
+Note : all external libraries install via npm install and it will be registered in the package.json file
+
+# -------------------------------------------- #
+
+► package.lock.json :
+=> this file is the duplicate file of package.json.
+= if we delete this it'll not affect in out project.
+
+# -------------------------------------------- #
+
+► readme file :
+=> read me file is one type of important notes files. or guidance file.
+
+# -------------------------------------------------------------------------- #
