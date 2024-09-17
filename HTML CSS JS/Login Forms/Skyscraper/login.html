@@ -18,39 +18,43 @@
 </head>
 
 <body>
-    <section>
-        <div class="row">
-            <div class="col-lg-6"></div>
-            <div class="form-div col-lg-6 d-flex justify-content-center">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="mb-2">Welcome Back</p>
-                        <h2 class="mb-4">Sign in back to your Account</h2>
-                        <form>
-                            <div class="mb-3 mt-4">
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter Email">
-                            </div>
-                            <div class="mb-3">
-                                <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Enter Password">
-                            </div>
-                            <div class="mb-3">
-                                <a href="#" class="mx-auto">Forgot Password?</a>
-                            </div>
-                            <div class="mb-3">
-                                <button type="submit" class="btn">Sign In</button>
-                            </div>
-                            <div class="mb-3">
-                                <a href="#">Sign in with Google</a>
-                            </div>
-                            <div class="mb-3">
-                                <a href="#">Sign in with Facebook</a>
-                            </div>
-                        </form>
+    <section class="login d-flex justify-content-center align-items-center">
+        <div class="card px-4 px-md-5 py-4">
+            <h2 class="mb-4">Sign in</h2>
+            <form class="d-flex flex-column justify-content-center align-items-center">
+                <div class="mb-3 mt-4 w-100">
+                    <input type="text" class="form-control py-2 px-4 " id="fname" aria-describedby="emailHelp"
+                        placeholder="Enter First name">
+                </div>
+                <div class="mb-3  w-100">
+                    <input type="text" class="form-control py-2 px-4" id="lname" placeholder="Enter Last name">
+                </div>
+                <div class="mb-3 w-100">
+                    <input type="text" class="form-control py-2 px-4" id="lname" placeholder="Enter Last name">
+                </div>
+                <div class="mb-3 w-100">
+                    <input type="email" class="form-control py-2 px-4" id="email" placeholder="Enter Email Address">
+                </div>
+                <div class="mb-3 w-100">
+                    <input type="text" class="form-control py-2 px-4" id="mobno" placeholder="Enter Mobile Number">
+                </div>
+                <div class="mb-3 w-100 d-flex align-items-center text-center gap-3">
+                    <div class="malegender">
+                        <input type="radio" name="gender" id="malegender">&nbsp;
+                        <label for="malegender">Male</label>
+                    </div>
+                    <div class="femalegender">
+                        <input type="radio" name="gender" id="femalegender">&nbsp;
+                        <label for="femalegender">Female</label>
                     </div>
                 </div>
-            </div>
+                <div class="mb-3 w-100">
+                    <input type="password" class="form-control py-2 px-4" id="password" placeholder="Enter Pasword">
+                </div>
+                <div class="mt-4 w-sm-100 ">
+                    <button type="submit" class="btn">Sign In</button>
+                </div>
+            </form>
         </div>
     </section>
 </body>
