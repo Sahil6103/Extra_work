@@ -1,4 +1,13 @@
 import React from "react";
+import Photo3 from "./assets/img/photo3.webp";
+import Photo4 from "./assets/img/photo4.webp";
+import Photo6 from "./assets/img/photo6.webp";
+import Photo7 from "./assets/img/photo7.webp";
+import Photo9 from "./assets/img/photo9.webp";
+import Photo13 from "./assets/img/photo13.webp";
+import Photo16 from "./assets/img/photo16.webp";
+import Photo20 from "./assets/img/photo20.webp";
+import Photo11 from "./assets/img/photo11.webp";
 
 export const Gallery = () => {
   return (
@@ -11,48 +20,28 @@ export const Gallery = () => {
         </div>
         <div className="main-gallery flex flex-col gap-3">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6">
+            <img src={Photo3} alt="" className="w-full h-auto object-contain" />
+            <img src={Photo4} alt="" className="w-full h-auto object-contain" />
+            <img src={Photo6} alt="" className="w-full h-auto object-contain" />
+            <img src={Photo7} alt="" className="w-full h-auto object-contain" />
+            <img src={Photo9} alt="" className="w-full h-auto object-contain" />
             <img
-              src="src/assets/img/photo3.webp"
+              src={Photo13}
               alt=""
               className="w-full h-auto object-contain"
             />
             <img
-              src="src/assets/img/photo4.webp"
+              src={Photo16}
               alt=""
               className="w-full h-auto object-contain"
             />
             <img
-              src="src/assets/img/photo6.webp"
+              src={Photo20}
               alt=""
               className="w-full h-auto object-contain"
             />
             <img
-              src="src/assets/img/photo7.webp"
-              alt=""
-              className="w-full h-auto object-contain"
-            />
-            <img
-              src="src/assets/img/photo9.webp"
-              alt=""
-              className="w-full h-auto object-contain"
-            />
-            <img
-              src="src/assets/img/photo13.webp"
-              alt=""
-              className="w-full h-auto object-contain"
-            />
-            <img
-              src="src/assets/img/photo16.webp"
-              alt=""
-              className="w-full h-auto object-contain"
-            />
-            <img
-              src="src/assets/img/photo20.webp"
-              alt=""
-              className="w-full h-auto object-contain"
-            />
-            <img
-              src="src/assets/img/photo11.webp"
+              src={Photo11}
               alt=""
               className="w-full h-auto object-contain"
             />

@@ -7,15 +7,17 @@
 
 @font-face {
   font-family: "aquire";
-  src: url("src/assets/font/aquire-font/AquireBold-8Ma60.otf");
+  src: url("src/assets/font/aquire-font/AquireBold-8Ma60.otf")
+    format("opentype");
 }
 @font-face {
   font-family: "airnt";
-  src: url("src/assets/font/airnt/Airnt.otf");
+  src: url("src/assets/font/airnt/Airnt.otf") format("opentype");
 }
 @font-face {
   font-family: "brandon";
-  src: url("src/assets/font/brandon-grotesque-font-family-1716364929-0/HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf");
+  src: url("src/assets/font/brandon-grotesque-font-family-1716364929-0/HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf")
+    format("opentype");
 }
 
 * {
